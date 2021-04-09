@@ -18,6 +18,11 @@ view model =
                 (viewThumbnail model.selected)
                 model.photos
             )
+        , img
+            [ class "large"
+            , src (urlPrefix ++ model.selected)
+            ]
+            []
         ]
 
 
